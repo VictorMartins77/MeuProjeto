@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Soma {
     public static void main(String[] args) {
-        int numero1 = 10;
-        int numero2 = 20;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o primeiro número:");
+        int numero1 = scanner.nextInt();
+
+        System.out.println("Digite o segundo número:");
+        int numero2 = scanner.nextInt();
+
         int soma = numero1 + numero2;
+
         System.out.println("A soma de " + numero1 + " e " + numero2 + " é " + soma);
     }
 }
+
